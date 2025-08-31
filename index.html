@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yu-Gi-Oh! - Jogo de Cartas Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Jogo de Cartas Yu-Gi-Oh! 🃏</h1>
+  </header>
+
+  <main>
+    <!-- Área das cartas disponíveis -->
+    <section class="deck" aria-label="Deck de cartas" role="region">
+      <h2>Escolha sua carta:</h2>
+      <div class="cards">
+        <img src="img/dragao.jpg" alt="Dragão Branco de Olhos Azuis" class="card" data-name="Dragão Branco de Olhos Azuis">
+        <img src="img/mago.jpeg" alt="Mago Negro" class="card" data-name="Mago Negro">
+        <img src="img/exodia.jpg" alt="Exodia" class="card" data-name="Exodia">
+      </div>
+    </section>
+
+    <!-- Área do campo de batalha -->
+    <section class="battlefield" aria-label="Campo de batalha" role="region">
+      <h2>Carta Selecionada:</h2>
+      <div id="selected-card" class="selected-card" aria-live="polite">
+        <p>Nenhuma carta selecionada</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yu-Gi-Oh! Game - Thamires Vieira</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
